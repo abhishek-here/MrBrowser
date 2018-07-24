@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sb.mrbrowser.MainActivity"
+    android:id="@+id/rl"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/capture"
+            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:background="@drawable/ic_photo_camera">
+        </ImageButton>
+
+
+
+        <EditText
+
+            android:layout_width="290dp"
+            android:layout_height="51dp"
+            android:hint="Search or type URL"
+            android:id="@+id/et1"
+            android:textColorHint="@color/white"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/mnu"
+                android:background="@drawable/ic_more"
+                android:onClick="popup"
+                />
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/cancel"
+                android:background="@drawable/ic_error"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/frame">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_gravity="top"
+            android:id="@+id/progress"
+            android:layout_marginTop="-3dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:background="@android:color/transparent"
+            />
+    </FrameLayout>
+ <android.support.v4.widget.SwipeRefreshLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/swipe_container">
+
+     <WebView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@+id/bt2"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentEnd="true"
+         android:id="@+id/wv">
+
+     </WebView>
+
+ </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

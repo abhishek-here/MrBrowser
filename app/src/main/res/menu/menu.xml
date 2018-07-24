@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Back"
+        android:id="@+id/back"></item>
+
+    <item android:title="Forward"
+        android:id="@+id/forward"></item>
+
+    <item android:title="Reload"
+        android:id="@+id/reload"></item>
+
+    <item android:title="Clear Passwords"
+        android:id="@+id/clear"></item>
+
+    <item android:title="Add bookmark"
+        android:id="@+id/addBook"></item>
+
+    <item android:title="Saved bookmarks"
+        android:id="@+id/bookmark"></item>
+
+    <item android:title="Set As HomePage"
+        android:id="@+id/home_page"></item>
+
+    <item android:title="Quit"
+        android:id="@+id/quit"></item>
+
+
+</menu>
